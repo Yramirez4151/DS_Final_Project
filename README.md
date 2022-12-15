@@ -25,7 +25,7 @@ The source of the dataset used in our project is a merged dataset of all the one
 •	A dummy variable for each weekday (Sunday, Monday, ..., Saturday)
 While doing preliminary data exploration, we noted that not all dates in each year are available. For example, the last two weeks of December are typically not listed. The week of July 4th holiday is not listed. The original dataset omitted these days. For our research purposes, there needs to be a weekday and a holiday variable created so the addition was made to the dataset.
 
-### Insights and Actions
+### Machine Learning Model Training
 - ANOVA TEST
 
 The first ANOVA test is used to see the variation between total crashes and holidays.
@@ -119,6 +119,14 @@ After the transformation, we successfully improve the Adjusted R\^2 from 12.2% t
 <img width="505" alt="Screen Shot 2022-12-15 at 16 12 22" src="https://user-images.githubusercontent.com/119276239/207968123-a439028a-0cc2-4309-8d40-2263232f10b9.png">
 
 The residual plots indicate that the model overall fits very well. The dataset is normally distributed and has no outliers.
+
+### Actions
+
+-Add traffic police in busy areas to maintain traffic order. 
+
+-Based on our findings, car crashes happened more during normal weekdays compare with the total number of crashes on weekends, therefore we can change the timing of traffic lights to accommodate to different volume of traffic according to traffic conditions during weekdays and weekends.
+
+-Send drivers real time notifications about traffic volume and conditions and ask them to be cautious during busy hours through radio or maps.
 
 ### LINK TO CODE
 
