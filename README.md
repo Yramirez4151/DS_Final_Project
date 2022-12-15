@@ -20,8 +20,9 @@ The source of the dataset used in our project is a merged dataset of all the one
 •	A dummy variable for each weekday (Sunday, Monday, ..., Saturday)
 While doing preliminary data exploration, we noted that not all dates in each year are available. For example, the last two weeks of December are typically not listed. The week of July 4th holiday is not listed. The original dataset omitted these days. For our research purposes, there needs to be a weekday and a holiday variable created so the addition was made to the dataset.
 
+### Insights and Actions
+
 ### LINK TO CODE
 
 ### LINK TO YOUTUBE VIDEO
 
-### Insights and Actions
