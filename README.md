@@ -39,15 +39,20 @@ Diving deeper, we find out the average number of car crashes during federal holi
 <img width="138" alt="Screen Shot 2022-12-15 at 2 01 57 PM" src="https://user-images.githubusercontent.com/54876981/207961731-be5903a8-355f-495a-8f95-a0df2a1f3c1c.png">
 
 The second ANOVA test, called "mod_weekday", was used to explore the effect of different day on traffic accidents.
-Based on the results we got from the summary, the F value is 45.32, which is a significant compare with 1, indicating there is a variance among means of different weekdays The p value is 2e-16,which is less than 0.05. These two values provide strong evidence to reject the null hypothesis. 
+Based on the results we got from the summary, the F value is 45.32, which is significantly large compare with 1, indicating there is a variance among means of different weekdays The p value is 2e-16,which is less than 0.05. These two values provide strong evidence to reject the null hypothesis. 
 
-<img width="493" alt="Screen Shot 2022-12-15 at 3 42 52 PM" src="https://user-images.githubusercontent.com/54876981/207962964-aacaf9d7-4258-4697-bac3-5063667c522a.png">
+<img width="473" alt="Screen Shot 2022-12-15 at 3 50 46 PM" src="https://user-images.githubusercontent.com/54876981/207964536-ccf23bac-0793-4eac-b6a5-e24bf2851c21.png">
 
-The mean value for each weekday is identifical with each other, among all of them, the number of traffic accidents reached its peak on Friday, the highest number of the week, with an average of 110.98, and the lowest number of traffic accidents occurred on Sunday, with an average of 75.07.
+
+The mean value for number of total crashes on each day is identifical with each other, among all of them, the number of traffic accidents reached its peak on Friday, the highest number of the week, with an average of 110.98, and the lowest number of traffic accidents occurred on Sunday, with an average of 75.07.
 
 <img width="138" alt="Screen Shot 2022-12-15 at 2 04 38 PM" src="https://user-images.githubusercontent.com/54876981/207963302-e612fc86-4262-4347-add1-3b22aeafc85d.png">
 
 After investigating the variance between weekdays, we need to think: whether this trend is only related to different weekdays, or it is related to working days and weekends in general. Therefore, another test was designed based on the whether weekend is the factor that affect the overall results in genral.
+
+From the summary of the weekend model ANOVA test, the F value is 139.8, which is greater than 1, and p value is 2e-16, also less than 0.05, both results shows that the average of the total crashes is significantly different with eath other on weekends and weekdays. 
+The values provides insights into our findings as we can conclude that car crashes is more likely to occur on weekdays than during weekends as the mean value for weekday groups is 101 while the mean value for weekend groups is only 82.49. 
+
 
 <img width="127" alt="Screen Shot 2022-12-15 at 2 05 58 PM" src="https://user-images.githubusercontent.com/54876981/207963435-31d62a04-1c67-413a-89c4-1ad87eb81d82.png">
 
