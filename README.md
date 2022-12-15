@@ -26,6 +26,14 @@ The source of the dataset used in our project is a merged dataset of all the one
 While doing preliminary data exploration, we noted that not all dates in each year are available. For example, the last two weeks of December are typically not listed. The week of July 4th holiday is not listed. The original dataset omitted these days. For our research purposes, there needs to be a weekday and a holiday variable created so the addition was made to the dataset.
 
 ### Insights and Actions
+- ANOVA TEST
+The first ANOVA test to created to find out whether number of daily car crashes is related to holidays. The holidy variable is grouped by 0 and 1: 1 means it is a federal holiday while 0 is not a fedeal holiday.
+
+
+
+According to summary from anova test, our p-value is 6.89e-08，which is less than 0.05. It means the daily number of car accidents varies greatly betwwen holidays and non-holidays. 
+
+Diving deeper, we find out the average daily car crashes during holiday is 66.52 while the average car crashes during non-holiday is 96.19 per day. By just comaring the mean value, the amount of car accidents is 23.6% lower on holidays than on non-holidays.
 
 
 ### LINK TO CODE
