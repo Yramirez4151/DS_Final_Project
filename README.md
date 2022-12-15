@@ -104,6 +104,7 @@ Here is the summary of the optimal model.
 After the selection, the optimal model with the lowest AIC includes AWND, TAVG, hld, Weekday, and Total_Traffic, which is the same as the model that we got from the backward elimination via p-value.
 
 -Final Model
+
 According to results from different approaches, we include AWND, TAVG, hld, Weekday, and Total_Traffic as the predictors in the final model.
 
 -Transformation
