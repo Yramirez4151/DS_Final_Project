@@ -27,7 +27,9 @@ While doing preliminary data exploration, we noted that not all dates in each ye
 
 ### Insights and Actions
 - ANOVA TEST
+
 The first ANOVA test to created to find out whether number of daily car crashes is related to holidays. The holidy variable is grouped by 0 and 1: 1 means it is a federal holiday while 0 is not a fedeal holiday.
+<img width="138" alt="Screen Shot 2022-12-15 at 2 01 57 PM" src="https://user-images.githubusercontent.com/54876981/207961731-be5903a8-355f-495a-8f95-a0df2a1f3c1c.png">
 
 
 
