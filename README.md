@@ -27,14 +27,30 @@ While doing preliminary data exploration, we noted that not all dates in each ye
 
 ### Insights and Actions
 - ANOVA TEST
-The first ANOVA test to created to find out whether number of daily car crashes is related to holidays. 
+The first ANOVA test is used to see the variation between total crashes and holidays.
 
 According to summary from anova test, our p-value is 6.89e-08，which is less than 0.05. It means the daily number of car accidents varies greatly betwwen holidays and non-holidays. 
+
 <img width="458" alt="Screen Shot 2022-12-15 at 3 39 20 PM" src="https://user-images.githubusercontent.com/54876981/207962381-79721e1b-dffa-48d4-8853-ac1818dff21a.png">
 
 Diving deeper, we find out the average daily car crashes during holiday is 66.52 while the average car crashes during non-holiday is 96.19 per day. By just comaring the mean value, the amount of car accidents is 23.6% lower on holidays than on non-holidays.
 
 <img width="138" alt="Screen Shot 2022-12-15 at 2 01 57 PM" src="https://user-images.githubusercontent.com/54876981/207961731-be5903a8-355f-495a-8f95-a0df2a1f3c1c.png">
+
+The second ANOVA test, called "mod_weekday", was used to explore the effect of different day on traffic accidents.
+Based on the results we got from the summary, the F value is 45.32, which is a significant compare with 1, indicating there is a variance among means of different weekdays The p value is 2e-16,which is less than 0.05. These two values provide strong evidence to reject the null hypothesis. 
+
+<img width="493" alt="Screen Shot 2022-12-15 at 3 42 52 PM" src="https://user-images.githubusercontent.com/54876981/207962964-aacaf9d7-4258-4697-bac3-5063667c522a.png">
+
+The mean value for each weekday is identifical with each other, among all of them, the number of traffic accidents reached its peak on Friday, the highest number of the week, with an average of 110.98, and the lowest number of traffic accidents occurred on Sunday, with an average of 75.07.
+
+<img width="138" alt="Screen Shot 2022-12-15 at 2 04 38 PM" src="https://user-images.githubusercontent.com/54876981/207963302-e612fc86-4262-4347-add1-3b22aeafc85d.png">
+
+After investigating the variance between weekdays, we need to think: whether this trend is only related to different weekdays, or it is related to working days and weekends in general. Therefore, another test was designed based on the whether weekend is the factor that affect the overall results in genral.
+
+<img width="127" alt="Screen Shot 2022-12-15 at 2 05 58 PM" src="https://user-images.githubusercontent.com/54876981/207963435-31d62a04-1c67-413a-89c4-1ad87eb81d82.png">
+
+
 
 
 ### LINK TO CODE
