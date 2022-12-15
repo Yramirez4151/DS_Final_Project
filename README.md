@@ -57,7 +57,67 @@ The values provides insights into our findings as we can conclude that car crash
 <img width="127" alt="Screen Shot 2022-12-15 at 2 05 58 PM" src="https://user-images.githubusercontent.com/54876981/207963435-31d62a04-1c67-413a-89c4-1ad87eb81d82.png">
 
 
+-Model Selection
 
+-Check Multicollinearity 
+
+<img width="478" alt="Screen Shot 2022-12-15 at 15 56 25" src="https://user-images.githubusercontent.com/119276239/207965410-c34f450c-30bc-4507-ad40-49b260866151.png">
+All VIFs are close to 1. Therefore, no variables should be removed here.
+
+Then, we use three methods to do the model selection.
+
+-Backwards elimination via p-value
+
+In this part, we removed the variable with largest p-value each time until all variables are statistically significant. Here is the model we get from Backwards elimination via p-value.
+
+<img width="466" alt="Screen Shot 2022-12-15 at 15 59 52" src="https://user-images.githubusercontent.com/119276239/207966024-c1aa0cf7-24c5-42f1-bb12-f03c446b2fa1.png">
+
+-Best subsets
+
+We also use the best subsets approach to improve the model selection.
+
+<img width="480" alt="Screen Shot 2022-12-15 at 16 04 09" src="https://user-images.githubusercontent.com/119276239/207966733-24ac5a70-ba3f-41ce-b62e-d33e8db850bb.png">
+
+The bic graph indicates the goodness of fit of different regression models. In this graph, the lower the bic is, the better the model is.
+Therefore, the bic graph indicates that the subset with 3 variables is the best.
+
+<img width="480" alt="Screen Shot 2022-12-15 at 16 05 01" src="https://user-images.githubusercontent.com/119276239/207966890-04003d27-56be-4ba5-977c-91266cd0628d.png">
+
+Mallows's cp is used to find the best subset of predictors based on the residual sum of squares. A smaller cp value indicates a more precise model.
+In the cp graph, the model of 5 predictors has the smallest cp value.
+
+<img width="480" alt="Screen Shot 2022-12-15 at 16 06 13" src="https://user-images.githubusercontent.com/119276239/207967111-56b671ce-0e79-458e-b866-858c1094593c.png">
+
+The adjusted R^2 indicates that how much variance of the output variable is explained by the input variables. By adding variables, we can see an increase of adjusted R^2. The adjusted R^2 reaches its peak when the subset is of 6 predictors.
+In terms of the different subsets that suggested by different graphs. We have to compare these results with other model selection methods to decide the optimal model.
+
+-Automated Stepwise
+
+<img width="425" alt="Screen Shot 2022-12-15 at 16 08 33" src="https://user-images.githubusercontent.com/119276239/207967498-47052a34-591f-4cc6-99b2-77649465d100.png">
+
+In the automated stepwise model selection, we used backward stepwise which is in the beginning of the model, all variables are included, and then test each variable as it is removed from the model (which selected is depends on the lowest AIC value of the variables in the current model because lower AIC indicated a best-fit model), then keep those that are considered to be the most statistically significant - repeating the process until the results are optimal.
+
+Here is the summary of the optimal model.
+
+<img width="465" alt="Screen Shot 2022-12-15 at 16 10 24" src="https://user-images.githubusercontent.com/119276239/207967796-f93bd2f6-4573-484c-be61-4ac014566dc2.png">
+
+After the selection, the optimal model with the lowest AIC includes AWND, TAVG, hld, Weekday, and Total_Traffic, which is the same as the model that we got from the backward elimination via p-value.
+
+-Final Model
+According to results from different approaches, we include AWND, TAVG, hld, Weekday, and Total_Traffic as the predictors in the final model.
+
+-Transformation
+
+<img width="465" alt="Screen Shot 2022-12-15 at 16 11 39" src="https://user-images.githubusercontent.com/119276239/207967990-8a0916d7-7e9f-4474-9636-4cdf3ee3cda4.png">
+
+Due to the different scales of different variables, we take the log of Total_Crash and Total_Traffic to make the coefficients look normal.
+After the transformation, we successfully improve the Adjusted R\^2 from 12.2% to 14.7%.
+
+-Model Evaluation
+
+<img width="505" alt="Screen Shot 2022-12-15 at 16 12 22" src="https://user-images.githubusercontent.com/119276239/207968123-a439028a-0cc2-4309-8d40-2263232f10b9.png">
+
+The residual plots indicate that the model overall fits very well. The dataset is normally distributed and has no outliers.
 
 ### LINK TO CODE
 
