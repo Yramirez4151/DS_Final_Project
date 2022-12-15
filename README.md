@@ -27,13 +27,14 @@ While doing preliminary data exploration, we noted that not all dates in each ye
 
 ### Insights and Actions
 - ANOVA TEST
+
 The first ANOVA test is used to see the variation between total crashes and holidays.
 
 According to summary from anova test, our p-value is 6.89e-08，which is less than 0.05. It means the daily number of car accidents varies greatly betwwen holidays and non-holidays. 
 
 <img width="458" alt="Screen Shot 2022-12-15 at 3 39 20 PM" src="https://user-images.githubusercontent.com/54876981/207962381-79721e1b-dffa-48d4-8853-ac1818dff21a.png">
 
-Diving deeper, we find out the average daily car crashes during holiday is 66.52 while the average car crashes during non-holiday is 96.19 per day. By just comaring the mean value, the amount of car accidents is 23.6% lower on holidays than on non-holidays.
+Diving deeper, we find out the average number of car crashes during federal holiday is 66.52 per day while the total number of car crashes during non-holiday is 96.19 per day. By just comaring their mean value, the amount of car accidents is 23.6% lower on federal holidays than on non-holidays.
 
 <img width="138" alt="Screen Shot 2022-12-15 at 2 01 57 PM" src="https://user-images.githubusercontent.com/54876981/207961731-be5903a8-355f-495a-8f95-a0df2a1f3c1c.png">
 
