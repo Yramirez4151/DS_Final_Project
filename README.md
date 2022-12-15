@@ -57,22 +57,22 @@ The values provides insights into our findings as we can conclude that car crash
 <img width="127" alt="Screen Shot 2022-12-15 at 2 05 58 PM" src="https://user-images.githubusercontent.com/54876981/207963435-31d62a04-1c67-413a-89c4-1ad87eb81d82.png">
 
 
--Model Selection
+- Model Selection
 
--Check Multicollinearity 
+- Check Multicollinearity 
 
 <img width="478" alt="Screen Shot 2022-12-15 at 15 56 25" src="https://user-images.githubusercontent.com/119276239/207965410-c34f450c-30bc-4507-ad40-49b260866151.png">
 All VIFs are close to 1. Therefore, no variables should be removed here.
 
 Then, we use three methods to do the model selection.
 
--Backwards elimination via p-value
+- Backwards elimination via p-value
 
 In this part, we removed the variable with largest p-value each time until all variables are statistically significant. Here is the model we get from Backwards elimination via p-value.
 
 <img width="466" alt="Screen Shot 2022-12-15 at 15 59 52" src="https://user-images.githubusercontent.com/119276239/207966024-c1aa0cf7-24c5-42f1-bb12-f03c446b2fa1.png">
 
--Best subsets
+- Best subsets
 
 We also use the best subsets approach to improve the model selection.
 
@@ -91,7 +91,7 @@ In the cp graph, the model of 5 predictors has the smallest cp value.
 The adjusted R^2 indicates that how much variance of the output variable is explained by the input variables. By adding variables, we can see an increase of adjusted R^2. The adjusted R^2 reaches its peak when the subset is of 6 predictors.
 In terms of the different subsets that suggested by different graphs. We have to compare these results with other model selection methods to decide the optimal model.
 
--Automated Stepwise
+- Automated Stepwise
 
 <img width="425" alt="Screen Shot 2022-12-15 at 16 08 33" src="https://user-images.githubusercontent.com/119276239/207967498-47052a34-591f-4cc6-99b2-77649465d100.png">
 
@@ -103,18 +103,18 @@ Here is the summary of the optimal model.
 
 After the selection, the optimal model with the lowest AIC includes AWND, TAVG, hld, Weekday, and Total_Traffic, which is the same as the model that we got from the backward elimination via p-value.
 
--Final Model
+- Final Model
 
 According to results from different approaches, we include AWND, TAVG, hld, Weekday, and Total_Traffic as the predictors in the final model.
 
--Transformation
+- Transformation
 
 <img width="465" alt="Screen Shot 2022-12-15 at 16 11 39" src="https://user-images.githubusercontent.com/119276239/207967990-8a0916d7-7e9f-4474-9636-4cdf3ee3cda4.png">
 
 Due to the different scales of different variables, we take the log of Total_Crash and Total_Traffic to make the coefficients look normal.
 After the transformation, we successfully improve the Adjusted R\^2 from 12.2% to 14.7%.
 
--Model Evaluation
+- Model Evaluation
 
 <img width="505" alt="Screen Shot 2022-12-15 at 16 12 22" src="https://user-images.githubusercontent.com/119276239/207968123-a439028a-0cc2-4309-8d40-2263232f10b9.png">
 
@@ -122,11 +122,11 @@ The residual plots indicate that the model overall fits very well. The dataset i
 
 ### Actions
 
--Add traffic police in busy areas to maintain traffic order. 
+- Add traffic police in busy areas to maintain traffic order. 
 
--Based on our findings, car crashes happened more during normal weekdays compare with the total number of crashes on weekends, therefore we can change the timing of traffic lights to accommodate to different volume of traffic according to traffic conditions during weekdays and weekends.
+- Based on our findings, car crashes happened more during normal weekdays compare with the total number of crashes on weekends, therefore we can change the timing of traffic lights to accommodate to different volume of traffic according to traffic conditions during weekdays and weekends.
 
--Send drivers real time notifications about traffic volume and conditions and ask them to be cautious during busy hours through radio or maps.
+- Send drivers real time notifications about traffic volume and conditions and ask them to be cautious during busy hours through radio or maps.
 
 ### LINK TO CODE
 
