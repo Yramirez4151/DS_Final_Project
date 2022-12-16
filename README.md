@@ -44,9 +44,10 @@ We also created a scatterplot of log of total traffic volume versus total crashe
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208115998-b4ecac22-e6f6-442b-b4b9-e2c502130909.JPG">
 
 We also create a scatterplot of the average temperature versus daily total crashes. There is a positive correlation between these two variables. As temperatures increase, people tend to travel more, which may be related to more traffic accidents. 
+
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208116248-46517a0d-3bc0-40b9-8757-537c138dbb47.JPG">
 
-Finally, we created correlation matrix and looked at the row with total crashes. A more intense blue color indicates a strong positive correlation. A more intense negative red color indicates a strong negative correlation. As observed in our previous figures, total crashes has a positive correlation with average temperature, log of total traffic, and the indicator variable for weekday.
+Finally, we also create a correlation matrix to see the correlation between total traffic crashes and other variables. We looked at the row with total crashes. A more intense blue color indicates a strong positive correlation. A more intense negative red color indicates a strong negative correlation. As observed in our previous figures, total crashes has a positive correlation with average temperature, log of total traffic, and the indicator variable for weekday.
 
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208116481-bad2c9ed-4ec4-4f3f-a378-88209e20ca71.JPG">
 
