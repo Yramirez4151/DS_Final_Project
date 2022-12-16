@@ -31,21 +31,24 @@ The source of the dataset used in our project is a merged dataset of all the one
 While doing preliminary data cleaning, we noted that not all dates in each year are available. For example, the last two weeks of December are typically not listed. The week of July 4th holiday is not listed. The original dataset omitted these days. For our research purposes, there needs to be a weekday and a holiday variable created so the addition was made to the dataset.
 
 #### Exploratory Data Analysis (EDA)
-Summary statistics
+We first prepared some summary statistics for numeric variables. The average daily total traffic is 410,952. The average daily wind speed is 10.82 miles per hour. The average daily precipitation is 0.12 inches. The average daily amount of snow is about 0.06 inches. The average daily snow depth is about 0.12 inches. The average daily temperature is about 55.6 degrees Fahrenheit. The average daily total crash accidents is 96. Finally, the average natural logarithm of total traffic is 11.9.
+
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208114616-6a5de73f-473a-46c3-9669-f7a2081dfff5.JPG">
 
-Crashes by weekday
+We examined the average traffic crashes for each weekday in our sample. Crashes tend to occur more on working weekdays than on weekends.
+
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208115661-6a24e97e-f47d-451d-8f1c-8534291a677e.JPG">
 
-Log traffic total crashes
+We also created a scatterplot of log of total traffic volume versus total crashes. The scatterplot shows a positive correlation between these two variables.
+
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208115998-b4ecac22-e6f6-442b-b4b9-e2c502130909.JPG">
 
-Average temperature and crashes
+We also create a scatterplot of the average temperature versus daily total crashes. There is a positive correlation between these two variables. As temperatures increase, people tend to travel more, which may be related to more traffic accidents. 
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208116248-46517a0d-3bc0-40b9-8757-537c138dbb47.JPG">
 
-Correlation plot
-<img width="450" src="https://user-images.githubusercontent.com/68659092/208116481-bad2c9ed-4ec4-4f3f-a378-88209e20ca71.JPG">
+Finally, we created correlation matrix and looked at the row with total crashes. A more intense blue color indicates a strong positive correlation. A more intense negative red color indicates a strong negative correlation. As observed in our previous figures, total crashes has a positive correlation with average temperature, log of total traffic, and the indicator variable for weekday.
 
+<img width="450" src="https://user-images.githubusercontent.com/68659092/208116481-bad2c9ed-4ec4-4f3f-a378-88209e20ca71.JPG">
 
 ### Machine Learning Model Training
 - ANOVA TEST
