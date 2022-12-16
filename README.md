@@ -31,9 +31,20 @@ The source of the dataset used in our project is a merged dataset of all the one
 While doing preliminary data cleaning, we noted that not all dates in each year are available. For example, the last two weeks of December are typically not listed. The week of July 4th holiday is not listed. The original dataset omitted these days. For our research purposes, there needs to be a weekday and a holiday variable created so the addition was made to the dataset.
 
 #### Exploratory Data Analysis (EDA)
-
+Summary statistics
 <img width="450" src="https://user-images.githubusercontent.com/68659092/208114616-6a5de73f-473a-46c3-9669-f7a2081dfff5.JPG">
 
+Crashes by weekday
+<img width="450" src="https://user-images.githubusercontent.com/68659092/208115661-6a24e97e-f47d-451d-8f1c-8534291a677e.JPG">
+
+Log traffic total crashes
+<img width="450" src="https://user-images.githubusercontent.com/68659092/208115998-b4ecac22-e6f6-442b-b4b9-e2c502130909.JPG">
+
+Average temperature and crashes
+<img width="450" src="https://user-images.githubusercontent.com/68659092/208116248-46517a0d-3bc0-40b9-8757-537c138dbb47.JPG">
+
+Correlation plot
+<img width="450" src="https://user-images.githubusercontent.com/68659092/208116481-bad2c9ed-4ec4-4f3f-a378-88209e20ca71.JPG">
 
 
 ### Machine Learning Model Training
