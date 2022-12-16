@@ -32,7 +32,8 @@ While doing preliminary data cleaning, we noted that not all dates in each year 
 
 #### Exploratory Data Analysis (EDA)
 
-![summary_stats](https://user-images.githubusercontent.com/68659092/208114616-6a5de73f-473a-46c3-9669-f7a2081dfff5.JPG | width=150)
+<img width="450" src="https://user-images.githubusercontent.com/68659092/208114616-6a5de73f-473a-46c3-9669-f7a2081dfff5.JPG">
+
 
 
 ### Machine Learning Model Training
