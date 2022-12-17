@@ -165,4 +165,5 @@ https://www.kaggle.com/code/ghghtak4/machine-learning-model
 https://www.kaggle.com/code/ghghtak4/model-selection
 
 ### LINK TO YOUTUBE VIDEO
-https://youtu.be/kr3jxNvfYSI
+Presentation video: https://youtu.be/kr3jxNvfYSI
+Tutorial video: https://youtu.be/exMnIX4yf6I
