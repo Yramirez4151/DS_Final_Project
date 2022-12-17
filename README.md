@@ -148,7 +148,7 @@ The residual plots indicate that the model overall fits very well. The dataset i
 
 ### Actions
 
-- Add traffic police in busy areas to maintain traffic order. 
+- From both the ANOVA tests and our regression models, we can conclude that number of car crashes reached its peak on Friday among all other days. The reason might be that many people travel between near towns or county for work, and they are going home on Friday. Friday is probably the buisest day of the week, so we can add more traffic police power in busy areas/time to maintain traffic order, and clear the vehicle in the accidents on time to ensure the circulation of the road section in the event of an accident. 
 
 - Based on our findings, car crashes happened more during normal weekdays compare with the total number of crashes on weekends, therefore we can change the timing of traffic lights to accommodate to different volume of traffic according to traffic conditions during weekdays and weekends.
 
