@@ -155,6 +155,14 @@ The residual plots indicate that the model overall fits very well. The dataset i
 - Send drivers real time notifications about traffic volume and conditions and ask them to be cautious during busy hours through radio or maps.
 
 ### LINK TO CODE
+#### Data Cleaning and EDA
+https://www.kaggle.com/code/ghghtak4/data-cleaning-and-eda
+
+#### Machine Learning Model
+https://www.kaggle.com/code/ghghtak4/machine-learning-model
+
+#### Model Selection
+https://www.kaggle.com/code/ghghtak4/model-selection
 
 ### LINK TO YOUTUBE VIDEO
 
